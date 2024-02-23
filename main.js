@@ -4,7 +4,7 @@ canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 var speed = 2
 var radius = 30
-var orbCount = 200
+var orbCount = 100
 var orbs = []
 
 for(let i = 0; i<orbCount; i++){
@@ -12,14 +12,6 @@ for(let i = 0; i<orbCount; i++){
 }
 
 tick()
-
-
-
-
-
-
-
-
 
 function tick() {
     rect(0, 0, canvas.width, canvas.height, "#000")
@@ -36,10 +28,6 @@ function tick() {
             e.velY *= -1
         }
     });
-
-
-
-
     requestAnimationFrame(tick)
 }
 
